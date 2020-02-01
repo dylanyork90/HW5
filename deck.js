@@ -1,12 +1,11 @@
 deck = {
   cardArray: [],
 
-  load: function()
-  {
-    for (i=0; i < 52; i++){
-      for(j = 0; j < 4; j++)
+  load: function(){
+    for (i=1; i < 5; i++){
+      for(j = 2; j < 15; j++)
       {
-              this.cards.push(Card(j,i));
+              this.cardArray.push(new Card(i,j));
 
       }
     }
